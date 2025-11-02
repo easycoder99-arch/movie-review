@@ -1,0 +1,57 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.1s ease;
+  font-family: Arial, sans-serif;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+.star.clickable:hover {
+  transform: scale(1.2);
+}
+
+.star.readonly {
+  cursor: default;
+}
+
+/* Size variants */
+.star.sm {
+  font-size: 1rem;
+}
+
+.star.md {
+  font-size: 1.5rem;
+}
+
+.star.lg {
+  font-size: 2rem;
+}
+
+.star.xl {
+  font-size: 2.5rem;
+}
+
+.rating-text {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+/* For display only ratings */
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
